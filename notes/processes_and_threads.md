@@ -1,8 +1,8 @@
 # Processes and Threads
 We often require an operating system to be able to:
-    - **Interleave execution of several processes** to maximise processor utilisation while providing reasonable repsonse time.
-    - Allocate resources to processes.
-    - Support **interprocess communication** and **user creation of processes**.
+- **Interleave execution of several processes** to maximise processor utilisation while providing reasonable repsonse time.
+- Allocate resources to processes.
+- Support **interprocess communication** and **user creation of processes**.
 
 ## Overview of Process Model
 ### Processes
@@ -83,13 +83,19 @@ A processes' information is stored in a **process control block** (PCB). PCBs to
     - Resource on which process was originally waiting on becomes available.
 
 ## Scheduler
-The scheduler decides which of the **_Ready_ processes to run**. There are various different **algorithms** for scheduling.
+Scheduler decides which of the _Ready_ **processes to run**. There are various **algorithms** for scheduling.
 
 ### Two Queue Algorithm
-Use a queue of ready events and blocked events.
+- Queue for **ready** events and for **blocked** ev-ents.
+- **Avoids scanning** list of processes to select one to **make ready**. 
+
+    ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0pJoyFwNIPisKTOrHGrslOqFC_wEczvxxg&usqp=CAU)
 
 ### Multi Queue Algorithm
-Having one blocked queue is inefficient as one resource being blocked has no effect on another resource. So use a blocked queue for each resource.
+- Having one blocked queue is inefficient as one resource being blocked has **no effect on another resource**. 
+- Use a (shorter) blocked queue for **each resource**.
+    
+    ![](https://teaching.csse.uwa.edu.au/units/CITS2002/lectures/lecture08/images/f3.08b.png)
 
 ## Thread Model
 ### Thread vs Process
