@@ -1,9 +1,9 @@
 # Operating Systems Overview
 
 ## Role of an Operating System
-An operating is a software layer on top of hardware that manages all parts of the system. It controls all computer resources and provides the base upon which application programs can be written. 
-
-The following points are additional views of the OS.
+- Software layer on top of hardware that manages all parts of the system. 
+- Controls all computer resources. 
+- Provides base upon which application programs can be written. 
 
 ### Abstract (or Extended) Machine
 - **Extends basic hardware** with added functionality.
@@ -37,19 +37,19 @@ The following points are additional views of the OS.
     - OS can prevent applications from interfering with each other.
 
 ## Interaction Between Application Programs and the OS
-- The OS runs in **Kernel Mode** while application programs run in **User Mode**.
-- The OS interacts via load and store instructions to all memory, CPU and device registers.
+- OS runs in **Kernel Mode** while application programs run in **User Mode**.
+- OS interacts via load and store instructions to all memory, CPU and device registers.
 - Applications interact with themselves and via functions call to library procedures.
-- Applications can **interact with the OS** via a **system call** to request a service. E.g. accessing a hard disk drive.
+- Applications can **interact with OS** via a **system call** to request a service. E.g. accessing a hard disk drive.
 
 ### Note on System Libraries
-Systems libraries are libraries of support functions (procedures, subroutines).
-    - A subset of library functions are system calls
-        - ``strcmp(), memcpy()`` are pure library functions.
-            - They only manipulate memory within the application or perform computations.
-        - ``open(), close(), read(), write()`` are system calls.
-            - They cross user-kernel boundary.
-            - Implementation mainly focused on passing request to OS and returning result to application.
+Systems libraries are libraries of **support functions** (procedures, subroutines).
+- Subset of library functions are system calls
+    - ``strcmp(), memcpy()`` are **pure** library functions.
+        - Only manipulate memory within the application or perform computations.
+    - ``open(), close(), read(), write()`` are **system calls**.
+        - Cross user-kernel boundary.
+        - Implementation focused on passing request to OS and returning result to application.
 
 ### Aside: Privilege-less OS
 - Some **Embedded OSs** have no privileged component.
