@@ -1,4 +1,4 @@
-# COMP3891
+# COMP3891 - Extended Operating Systems
 ## Operating Systems Overview
 - [Role and Structure of Operating System](notes/os_overview.md)
 
