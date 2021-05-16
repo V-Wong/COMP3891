@@ -15,7 +15,7 @@
 - [Virtual File System](notes/virtual_file_system.md)
 - [File Descriptors and Open File Table](notes/fd_and_oft.md)
 - [EXT2](notes/ext2.md)
-- [EXT3 (Journallin)](notes/ext3.md)
+- [EXT3 (Journalling)](notes/ext3.md)
 
 ## Memory Management
 - [Virtual Memory](notes/virtual_memory.md)
